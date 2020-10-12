@@ -1,0 +1,256 @@
+#color {
+    background: #454753;
+    background: #696c73;
+    background: #91ba77;
+    background: #9dc3e8;
+    background: #eb8d64;
+    background: #f4f5fa;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.frame-chat {
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-friend {
+    width: 200px;
+    height: 100%;
+    background: #454753;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-friend .box-search {
+    width: 150px;
+    height: 40px;
+    background: #696c73;
+    margin: 15px 35px 20px 15px;
+    border-radius: 3px;
+    justify-items: center;
+    display: flex;
+}
+
+.list-friend .box-search input {
+    width: 120px;
+    line-height: 40px;
+    background: #696c73;
+    border-style: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.list-friend .box-search .label {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.list-friend .box-search .label img {
+    width: 30px;
+}
+
+.list-friend .avatar {
+    width: 180px;
+    height: 45px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.list-friend .avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 0 solid #696c73;
+    box-sizing: border-box;
+}
+
+.list-friend .avatar .info p {
+    line-height: 22px;
+    margin-left: 5px;
+}
+
+.list-friend .avatar .info .name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #f4f5fa;
+}
+
+.list-friend .avatar .info .status {
+    font-size: 11px;
+    color: #696c73;
+}
+
+.list-friend .avatar .info .status i {
+    font-size: 60%;
+    margin-right: 4px;
+    color: #91ba77;
+}
+
+.box-chat {
+    width: 400px;
+    height: 100%;
+    background: #f4f5fa;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box-chat .header {
+    width: 100%;
+    height: 75px;
+    border-bottom: 2px solid white;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.box-chat .header img {
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 3px solid #91ba77;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box-chat .header .info {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.box-chat .header .info .name {
+    font-size: 14px;
+    color: #454753;
+    font-weight: bold;
+}
+
+.box-chat .header .info .status {
+    font-size: 12px;
+    text-transform: none;
+    color: #868992;
+    margin-top: 2px;
+}
+
+.box-chat .header i {
+    vertical-align: top;
+    margin-top: 25px;
+    margin-left: 130px;
+    color: #868992;
+    opacity: 0.4;
+}
+
+.box-chat .body {
+    width: 100%;
+    height: 450px;
+    border-bottom: 2px solid white;
+}
+
+.body .incoming-message {
+    width: 300px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.body .incoming-message .note {
+    display: inline-block;
+}
+
+.body .status {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.body .status.green {
+    background: #8fc064;
+}
+
+.body .status.blue {
+    background: #9dc3e8;
+}
+
+.body .note .name {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #696c73;
+}
+
+.body .note .time {
+    display: inline-block;
+    font-size: 11px;
+    color: #868992;
+}
+
+.body .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+}
+
+.body .incoming-message .triangle {
+    border-color: transparent transparent #91ba78 transparent;
+    margin-left: 15px;
+}
+
+.body .incoming-message .message {
+    font-size: 12px;
+    background: #91ba78;
+    color: white;
+    padding: 20px 15px 20px 15px;
+    border-radius: 4px;
+}
+
+.body .away-message {
+    width: 300px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.body .away-message .note {
+    text-align: right;
+}
+
+.body .away-message .triangle {
+    border-color: transparent transparent #9dc3e8 transparent;
+    margin-left: 250px;
+}
+
+.body .away-message .message {
+    font-size: 12px;
+    background: #9dc3e8;
+    color: white;
+    padding: 20px 15px 20px 15px;
+    border-radius: 4px;
+}
+
+.body .incoming-message .note span:nth-of-type(3) {
+    opacity: 0.5;
+}
+
+.body .incoming-message .note span:nth-of-type(4) {
+    opacity: 0.2;
+}
+
+.footer .input-message textarea {
+    width: 350px;
+    height: 90px;
+    border: none;
+    resize: none;
+}
